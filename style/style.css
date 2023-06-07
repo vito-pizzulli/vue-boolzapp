@@ -141,6 +141,10 @@ div.users-section > div.users-list > div.user {
     position: relative;
 }
 
+div.users-section > div.users-list > div.user.active {
+    background-color: #e9ebeb;
+}
+
 div.users-section > div.users-list > div.user > .user-informations {
     height: 100%;
     display: flex;
