@@ -4,3 +4,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #dadbd3;
+}
+
+#app {
+    height: 100vh;
+}
+
+div.upper-bg {
+    background-color: #009688;
+    height: 15%;
+}
