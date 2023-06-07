@@ -34,7 +34,6 @@ div.container {
 div.users-section {
     width: 40%;
     height: 100%;
-    background-color: lightcoral;
     overflow-y: auto;
 }
 
@@ -43,4 +42,24 @@ div.chat-section {
     height: 100%;
     background-color: skyblue;
     overflow-y: auto;
+}
+
+div.users-section > div.my-user {
+    background-color: lightgreen;
+    height: 8%;
+}
+
+div.users-section > div.desktop-notifications {
+    background-color: lightgoldenrodyellow;
+    height: 10%;
+}
+
+div.users-section > div.users-list {
+    background-color: lightsalmon;
+    height: 82%;
+}
+
+div.users-section > div.users-list > div.user-search {
+    background-color: lightcoral;
+    height: 10%;
 }
