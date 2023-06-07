@@ -134,6 +134,35 @@ div.users-section > div.users-list > div.user-search > input {
     font-size: 1.2rem;
 }
 
+div.users-section > div.users-list > div.user {
+    height: 12%;
+    padding: 1rem;
+    border: 1px solid #f8f8f8;
+    position: relative;
+}
+
+div.users-section > div.users-list > div.user > .user-informations {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+div.users-section > div.users-list > div.user > .user-informations > div {
+    margin-left: 1rem;
+}
+
+div.users-section > div.users-list > div.user > .user-informations > div > span:first-of-type {
+    font-size: 1.3rem;
+}
+
+div.users-section > div.users-list > div.user > .user-informations > div > span:last-of-type {
+    font-size: .9rem;
+    color: gray;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
 div.chat-section > div.chatting-user > div.chatting-user-informations > div {
     margin-left: 1rem;
 }
