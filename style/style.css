@@ -41,7 +41,6 @@ div.users-section {
 div.chat-section {
     width: 60%;
     height: 100%;
-    background-color: skyblue;
     overflow-y: scroll;
 }
 
@@ -82,6 +81,20 @@ div.chat-section > div.user-chatting {
 div.users-section > div.desktop-notifications {
     background-color: #8edafc;
     height: 10%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.fa-bell-slash {
+    font-size: 2rem;
+    color: #8edafc;
+    background-color: #f2fbff;
+    padding: 1rem;
+    border-radius: 50%;
+    width: 70px;
+    aspect-ratio: 1;
+    margin-right: 1rem;
 }
 
 div.users-section > div.users-list {
@@ -92,6 +105,29 @@ div.users-section > div.users-list {
 div.users-section > div.users-list > div.user-search {
     background-color: #fafafa;
     height: 10%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+div.users-section > div.users-list > div.user-search > button {
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid #fafafa;
+}
+
+div.users-section > div.users-list > div.user-search > button > i {
+    color: #b1b1b1;
+    font-size: 1.2rem;
+}
+
+div.users-section > div.users-list > div.user-search > input {
+    width: 80%;
+    height: 100%;
+    padding: 1rem;
+    border: 1px solid #fafafa;
+    font-size: 1rem;
 }
 
 div.chat-section > div.chat-messages{
@@ -108,4 +144,10 @@ div.chat-section > div.message-input {
 .avatar-image {
     border-radius: 50%;
     height: 100%;
+}
+
+.clickable {
+    color: grey;
+    text-decoration: underline;
+    font-size: .9rem;
 }
