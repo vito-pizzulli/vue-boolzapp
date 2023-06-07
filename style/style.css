@@ -35,13 +35,11 @@ div.container {
 div.users-section {
     width: 40%;
     height: 100%;
-    overflow-y: scroll;
 }
 
 div.chat-section {
     width: 60%;
     height: 100%;
-    overflow-y: scroll;
 }
 
 div.users-section > div.my-user,
@@ -104,6 +102,7 @@ div.users-section > div.desktop-notifications {
 div.users-section > div.users-list {
     background-color: white;
     height: 82%;
+    overflow-y: scroll;
 }
 
 div.users-section > div.users-list > div.user-search {
@@ -181,6 +180,7 @@ div.chat-section > div.chat-messages {
     padding: 3rem 5rem;
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
 }
 
 div.chat-section > div.chat-messages > div.message-balloon {
