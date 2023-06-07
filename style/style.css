@@ -131,7 +131,7 @@ div.users-section > div.users-list > div.user-search > input {
     height: 100%;
     padding: 1rem;
     border: 1px solid #fafafa;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 div.chat-section > div.chatting-user > div.chatting-user-informations > div {
@@ -179,6 +179,24 @@ div.chat-section > div.message-input {
     background-color: #f3eeea;
     border: 1px solid #d6d6d6;
     height: 8%;
+    display: flex;
+    align-items: center;
+}
+
+div.chat-section > div.message-input > i {
+    color: #6b7376;
+    font-size: 1.7rem;
+    width: 10%;
+    text-align: center;
+}
+
+div.chat-section > div.message-input > input {
+    width: 90%;
+    height: 75%;
+    padding: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
 }
 
 .avatar-image {
