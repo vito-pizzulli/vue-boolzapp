@@ -11,9 +11,22 @@ body {
 
 #app {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 div.upper-bg {
     background-color: #009688;
+    width: 100%;
     height: 15%;
+    position: absolute;
+    top: 0;
+}
+
+div.container {
+    width: 80%;
+    height: 95%;
+    background-color: red;
+    z-index: 1;
 }
