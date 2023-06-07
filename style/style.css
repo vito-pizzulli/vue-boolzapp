@@ -44,38 +44,50 @@ div.chat-section {
     overflow-y: scroll;
 }
 
-div.users-section > div.my-user {
+div.users-section > div.my-user,
+div.chat-section > div.chatting-user {
     display: flex;
     justify-content: space-between;
     padding: .5rem;
 }
 
-div.users-section > div.my-user > div.my-user-informations {
+div.users-section > div.my-user > div.my-user-informations,
+div.chat-section > div.chatting-user > div.chatting-user-informations {
     display: flex;
     align-items: center;
 }
 
 div.users-section > div.my-user > div.my-user-informations > span {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-left: 1rem;
 }
 
-div.users-section > div.my-user > div.my-user-icons {
+div.users-section > div.my-user > div.my-user-icons,
+div.chat-section > div.chatting-user > div.chatting-user-icons {
     display: flex;
     align-items: center;
 }
 
-div.users-section > div.my-user > div.my-user-icons > i {
+div.users-section > div.my-user > div.my-user-icons > i,
+div.chat-section > div.chatting-user > div.chatting-user-icons > i {
     color: #b1b1b1;
     font-size: 1.7rem;
     margin: .7rem;
 }
 
 div.users-section > div.my-user,
-div.chat-section > div.user-chatting {
+div.chat-section > div.chatting-user {
     background-color: #eaeaea;
     border: 1px solid #d6d6d6;
     height: 8%;
+}
+
+div.chat-section > div.chatting-user > div.chatting-user-informations > div {
+    margin-left: 1rem;
+}
+
+div.chat-section > div.chatting-user > div.chatting-user-informations > div > span:first-of-type {
+    font-size: 1.3rem;
 }
 
 div.users-section > div.desktop-notifications {
@@ -150,4 +162,8 @@ div.chat-section > div.message-input {
     color: grey;
     text-decoration: underline;
     font-size: .9rem;
+}
+
+.text-gray {
+    color: gray;
 }
