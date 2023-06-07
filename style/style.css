@@ -99,38 +99,39 @@ div.users-section > div.desktop-notifications {
     margin-right: 1rem;
 }
 
-div.users-section > div.users-list {
-    background-color: white;
-    height: 82%;
-    overflow-y: scroll;
-}
-
-div.users-section > div.users-list > div.user-search {
+div.users-section > div.user-search {
     background-color: #fafafa;
-    height: 10%;
+    height: 7%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 0 .5rem;
 }
 
-div.users-section > div.users-list > div.user-search > button {
+div.users-section > div.user-search > button {
     width: 20%;
-    height: 100%;
+    height: 75%;
     background-color: white;
     border: 1px solid #fafafa;
 }
 
-div.users-section > div.users-list > div.user-search > button > i {
+div.users-section > div.user-search > button > i {
     color: #b1b1b1;
     font-size: 1.2rem;
 }
 
-div.users-section > div.users-list > div.user-search > input {
+div.users-section > div.user-search > input {
     width: 80%;
-    height: 100%;
+    height: 75%;
     padding: 1rem;
     border: 1px solid #fafafa;
     font-size: 1.2rem;
+}
+
+div.users-section > div.users-list {
+    background-color: white;
+    height: 75%;
+    overflow-y: scroll;
 }
 
 div.users-section > div.users-list > div.user {

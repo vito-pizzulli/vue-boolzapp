@@ -43,11 +43,11 @@
                         <span class="clickable">Attiva notifiche desktop</span>
                     </div>
                 </div>
+                <div class="user-search">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text" placeholder="Cerca o inizia una nuova chat">
+                </div>
                 <div class="users-list">
-                    <div class="user-search">
-                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                        <input type="text" placeholder="Cerca o inizia una nuova chat">
-                    </div>
                     <div class="user" v-for="(contact,index) in contacts" :class="{ active: index === activeIndex }" @click="activeIndexUpdate(index)">
                         <div class="user-informations">
                             <img :src="contact.avatar" alt="Avatar Image" class="avatar-pic">
