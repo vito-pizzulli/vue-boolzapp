@@ -63,3 +63,18 @@ div.users-section > div.users-list > div.user-search {
     background-color: lightcoral;
     height: 10%;
 }
+
+div.chat-section > div.user-chatting {
+    background-color: lightcyan;
+    height: 8%;
+}
+
+div.chat-section > div.chat-messages{
+    background-image: url(../img/mine.jpg);
+    height: 84%;
+}
+
+div.chat-section > div.message-input {
+    background-color: lightpink;
+    height: 8%;
+}
