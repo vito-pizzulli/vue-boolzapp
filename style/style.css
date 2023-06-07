@@ -27,6 +27,20 @@ div.upper-bg {
 div.container {
     width: 80%;
     height: 95%;
-    background-color: red;
     z-index: 1;
+    display: flex;
+}
+
+div.users-section {
+    width: 40%;
+    height: 100%;
+    background-color: lightcoral;
+    overflow-y: auto;
+}
+
+div.chat-section {
+    width: 60%;
+    height: 100%;
+    background-color: skyblue;
+    overflow-y: auto;
 }
