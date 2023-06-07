@@ -7,6 +7,7 @@
 
 body {
     background-color: #dadbd3;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #app {
@@ -44,6 +45,33 @@ div.chat-section {
     overflow-y: scroll;
 }
 
+div.users-section > div.my-user {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+}
+
+div.users-section > div.my-user > div.my-user-informations {
+    display: flex;
+    align-items: center;
+}
+
+div.users-section > div.my-user > div.my-user-informations > span {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+div.users-section > div.my-user > div.my-user-icons {
+    display: flex;
+    align-items: center;
+}
+
+div.users-section > div.my-user > div.my-user-icons > i {
+    color: #b1b1b1;
+    font-size: 1.7rem;
+    margin: .7rem;
+}
+
 div.users-section > div.my-user,
 div.chat-section > div.user-chatting {
     background-color: #eaeaea;
@@ -75,4 +103,9 @@ div.chat-section > div.message-input {
     background-color: #f3eeea;
     border: 1px solid #d6d6d6;
     height: 8%;
+}
+
+.avatar-image {
+    border-radius: 50%;
+    height: 100%;
 }
