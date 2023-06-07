@@ -22,14 +22,13 @@
     <script src="https://unpkg.com/vue@3"></script>
 
     <div id="app">
-        <div class="upper-bg">
-        </div>
+        <div class="upper-bg"></div>
         <div class="container">
             <div class="users-section">
                 <div class="my-user">
                     <div class="my-user-informations">
-                        <img src="img/avatar_2.jpg" alt="Avatar Image" class="avatar-image">
-                        <span>Vito</span>
+                        <img src="img/avatar_io.jpg" alt="My Avatar Image" class="avatar-pic">
+                        <span>Sofia</span>
                     </div>
                     <div class="my-user-icons">
                         <i class="fa-solid fa-circle-notch"></i>
@@ -49,31 +48,11 @@
                         <button><i class="fa-solid fa-magnifying-glass"></i></button>
                         <input type="text" placeholder="Cerca o inizia una nuova chat">
                     </div>
-                    <div class="user active">
+                    <div class="user" v-for="contact in contacts">
                         <div class="user-informations">
-                            <img src="img/avatar_3.jpg" alt="Avatar Image" class="avatar-image">
+                            <img :src="contact.avatar" alt="Avatar Image" class="avatar-pic">
                             <div>
-                                <span>Fabio</span><br>
-                                <span class="text-gray ">Ultimo messaggio inviato</span>
-                                <span>12:00</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="user">
-                        <div class="user-informations">
-                            <img src="img/avatar_3.jpg" alt="Avatar Image" class="avatar-image">
-                            <div>
-                                <span>Fabio</span><br>
-                                <span class="text-gray ">Ultimo messaggio inviato</span>
-                                <span>12:00</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="user">
-                        <div class="user-informations">
-                            <img src="img/avatar_3.jpg" alt="Avatar Image" class="avatar-image">
-                            <div>
-                                <span>Fabio</span><br>
+                                <span>{{ contact.name }}</span><br>
                                 <span class="text-gray ">Ultimo messaggio inviato</span>
                                 <span>12:00</span>
                             </div>
@@ -84,7 +63,7 @@
             <div class="chat-section">
                 <div class="chatting-user">
                     <div class="chatting-user-informations">
-                        <img src="img/avatar_1.jpg" alt="Avatar Image" class="avatar-image">
+                        <img src="img/avatar_1.jpg" alt="Avatar Image" class="avatar-pic">
                         <div>
                             <span>Michele</span><br>
                             <span class="text-gray ">Ultimo accesso oggi alle 12:00</span>
@@ -99,11 +78,11 @@
                 <div class="chat-messages">
                     <div class="message-balloon sent">
                         <p>Hai portato a spasso il cane?</p>
-                        <span>15:00</span>
+                        <span>12:00</span>
                     </div>
                     <div class="message-balloon received">
                         <p>Tutto fatto!</p>
-                        <span>15:00</span>
+                        <span>12:00</span>
                     </div>
                 </div>
                 <div class="message-input">
