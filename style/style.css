@@ -82,14 +82,6 @@ div.chat-section > div.chatting-user {
     height: 8%;
 }
 
-div.chat-section > div.chatting-user > div.chatting-user-informations > div {
-    margin-left: 1rem;
-}
-
-div.chat-section > div.chatting-user > div.chatting-user-informations > div > span:first-of-type {
-    font-size: 1.3rem;
-}
-
 div.users-section > div.desktop-notifications {
     background-color: #8edafc;
     height: 10%;
@@ -142,9 +134,45 @@ div.users-section > div.users-list > div.user-search > input {
     font-size: 1rem;
 }
 
-div.chat-section > div.chat-messages{
+div.chat-section > div.chatting-user > div.chatting-user-informations > div {
+    margin-left: 1rem;
+}
+
+div.chat-section > div.chatting-user > div.chatting-user-informations > div > span:first-of-type {
+    font-size: 1.3rem;
+}
+
+div.chat-section > div.chat-messages {
     background-image: url(../img/mine.jpg);
     height: 84%;
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+div.chat-section > div.chat-messages > div.message-balloon {
+    width: 40%;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+div.chat-section > div.chat-messages > div.message-balloon > span {
+    font-size: .7rem;
+    color: gray;
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+}
+
+div.chat-section > div.chat-messages > div.message-balloon.sent {
+    background-color: #d5f9ba;
+    align-self: flex-end;
+}
+
+div.chat-section > div.chat-messages > div.message-balloon.received {
+    background-color: white;
 }
 
 div.chat-section > div.message-input {
