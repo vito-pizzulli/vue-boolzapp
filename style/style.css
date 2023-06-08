@@ -89,12 +89,12 @@ div.users-section > div.desktop-notifications {
 }
 
 .fa-bell-slash {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #8edafc;
     background-color: #f2fbff;
     padding: 1rem;
     border-radius: 50%;
-    width: 70px;
+    width: 65px;
     aspect-ratio: 1;
     margin-right: 1rem;
 }
