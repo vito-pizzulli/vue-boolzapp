@@ -203,6 +203,11 @@ div.chat-section > div.chat-messages > div.message-balloon {
     position: relative;
 }
 
+div.chat-section > div.chat-messages > div.message-balloon > p {
+    cursor: text;
+    width: fit-content;
+}
+
 div.chat-section > div.chat-messages > div.message-balloon > span {
     font-size: .7rem;
     color: gray;
@@ -231,6 +236,14 @@ div.chat-section > div.chat-messages > div.message-balloon.sent {
 
 div.chat-section > div.chat-messages > div.message-balloon.received {
     background-color: white;
+}
+
+div.chat-section > div.chat-messages > div.dropdown-menu-bg {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 div.chat-section > div.chat-messages > div.message-balloon > div.dropdown-menu {

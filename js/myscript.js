@@ -219,6 +219,9 @@ createApp ({
         showDropdownMenu() {
             this.dropDownHidden = false;
         },
+        hideDropdownMenu() {
+            this.dropDownHidden = true;
+        },
         currentDateWithFormat() {
             date = new Date();
             day = date.getDate();
