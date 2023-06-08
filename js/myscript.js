@@ -178,7 +178,17 @@ createApp ({
             this.activeIndex = index
         },
         userSearch() {
-            console.log('search done');
+            this.contacts.forEach(contact => 
+                contact.visible = false);
+            if (this.userToSearch === '') {
+                this.contacts.forEach(contact => 
+                    contact.visible = true);
+            }
+            this.contacts.forEach(contact => {
+                if (contact.name.toLowerCase().includes(this.userToSearch.toLowerCase())) {
+                    contact.visible = true;
+                }
+            })
         },
         sendNewMessage() {
             if ((this.newMessageSent !== '') && (this.newMessageSent.trim().length !== 0)) {
