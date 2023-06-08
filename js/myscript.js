@@ -175,7 +175,10 @@ createApp ({
     },
     methods: {
         activeIndexUpdate(index) {
-            this.activeIndex = index
+            this.activeIndex = index;
+        },
+        filterVisibleContacts() {
+            return this.contacts.filter(contact => contact.visible);
         },
         userSearch() {
             this.contacts.forEach(contact => 

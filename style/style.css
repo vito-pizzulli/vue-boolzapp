@@ -140,41 +140,37 @@ div.users-section > div.users-list {
     overflow-y: scroll;
 }
 
-div.users-section > div.users-list > div {
+div.users-section > div.users-list > div.user {
     height: 12%;
-}
-
-div.users-section > div.users-list > div > div.user {
-    height: 100%;
     padding: 1rem;
     border: 1px solid #f8f8f8;
     position: relative;
     transition: all .5s;
 }
 
-div.users-section > div.users-list > div > div.user:hover {
+div.users-section > div.users-list > div.user:hover {
     background-color: #f6f6f6;
 }
 
-div.users-section > div.users-list > div > div.user.active {
+div.users-section > div.users-list > div.user.active {
     background-color: #e9ebeb;
 }
 
-div.users-section > div.users-list > div > div.user > .user-informations {
+div.users-section > div.users-list > div.user > .user-informations {
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-div.users-section > div.users-list > div > div.user > .user-informations > div {
+div.users-section > div.users-list > div.user > .user-informations > div {
     margin-left: 1rem;
 }
 
-div.users-section > div.users-list > div > div.user > .user-informations > div > span:first-of-type {
+div.users-section > div.users-list > div.user > .user-informations > div > span:first-of-type {
     font-size: 1.3rem;
 }
 
-div.users-section > div.users-list > div > div.user > .user-informations > div > span:last-of-type {
+div.users-section > div.users-list > div.user > .user-informations > div > span:last-of-type {
     font-size: .9rem;
     color: gray;
     position: absolute;
