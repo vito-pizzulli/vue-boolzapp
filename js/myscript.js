@@ -8,6 +8,7 @@ createApp ({
                     name: 'Michele',
                     avatar: './img/avatar_1.jpg',
                     visible: true,
+                    id: 1,
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
@@ -30,6 +31,7 @@ createApp ({
                     name: 'Fabio',
                     avatar: './img/avatar_2.jpg',
                     visible: true,
+                    id: 2,
                     messages: [
                         {
                             date: '20/03/2020 16:30:00',
@@ -52,6 +54,7 @@ createApp ({
                     name: 'Samuele',
                     avatar: './img/avatar_3.jpg',
                     visible: true,
+                    id: 3,
                     messages: [
                         {
                             date: '28/03/2020 10:10:40',
@@ -74,6 +77,7 @@ createApp ({
                     name: 'Alessandro B.',
                     avatar: './img/avatar_4.jpg',
                     visible: true,
+                    id: 4,
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
@@ -91,6 +95,7 @@ createApp ({
                     name: 'Alessandro L.',
                     avatar: './img/avatar_5.jpg',
                     visible: true,
+                    id: 5,
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
@@ -108,6 +113,7 @@ createApp ({
                     name: 'Claudia',
                     avatar: './img/avatar_6.jpg',
                     visible: true,
+                    id: 6,
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
@@ -130,6 +136,7 @@ createApp ({
                     name: 'Federico',
                     avatar: './img/avatar_7.jpg',
                     visible: true,
+                    id: 7,
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
@@ -147,6 +154,7 @@ createApp ({
                     name: 'Davide',
                     avatar: './img/avatar_8.jpg',
                     visible: true,
+                    id: 8,
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
@@ -166,7 +174,7 @@ createApp ({
                     ],
                 }
             ],
-            activeIndex: 0,
+            activeUser: 0,
             userToSearch: '',
             newMessageSent: '',
             messageSentAudio: new Audio('audio/messageSent.mp3'),
@@ -174,8 +182,8 @@ createApp ({
         }
     },
     methods: {
-        activeIndexUpdate(index) {
-            this.activeIndex = index;
+        activeUserUpdate(contactId) {
+            this.activeUser = contactId - 1;
         },
         filterVisibleContacts() {
             return this.contacts.filter(contact => contact.visible);
@@ -197,14 +205,14 @@ createApp ({
             if ((this.newMessageSent !== '') && (this.newMessageSent.trim().length !== 0)) {
                 newMessageAdd = { date: this.currentDateWithFormat(), message: this.newMessageSent, status: 'sent' };
                 this.messageSentAudio.play();
-                this.contacts[this.activeIndex].messages.push(newMessageAdd);
+                this.contacts[this.activeUser].messages.push(newMessageAdd);
                 this.newMessageSent = ''
                 newMessageReceived = setTimeout(() => this.newMessageReceived(), 1000);
             }
         },
         newMessageReceived() {
             newMessageReceivedAdd = { date: this.currentDateWithFormat(), message: 'Ok!', status: 'received' };
-            this.contacts[this.activeIndex].messages.push(newMessageReceivedAdd);
+            this.contacts[this.activeUser].messages.push(newMessageReceivedAdd);
             this.messageReceivedAudio.play();
         },
         currentDateWithFormat() {
