@@ -178,7 +178,8 @@ createApp ({
             userToSearch: '',
             newMessageSent: '',
             messageSentAudio: new Audio('audio/messageSent.mp3'),
-            messageReceivedAudio: new Audio('audio/messageReceived.mp3')
+            messageReceivedAudio: new Audio('audio/messageReceived.mp3'),
+            dropDownHidden: true
         }
     },
     methods: {
@@ -214,6 +215,9 @@ createApp ({
             newMessageReceivedAdd = { date: this.currentDateWithFormat(), message: 'Ok!', status: 'received' };
             this.contacts[this.activeUser].messages.push(newMessageReceivedAdd);
             this.messageReceivedAudio.play();
+        },
+        showDropdownMenu() {
+            this.dropDownHidden = false;
         },
         currentDateWithFormat() {
             date = new Date();

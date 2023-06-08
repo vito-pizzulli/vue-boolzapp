@@ -211,6 +211,19 @@ div.chat-section > div.chat-messages > div.message-balloon > span {
     right: 3%;
 }
 
+div.chat-section > div.chat-messages > div.message-balloon > i {
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    color: #a7a7a7;
+    font-size: 1.3rem;
+    display: none;
+}
+
+div.chat-section > div.chat-messages > div.message-balloon:hover i {
+    display: inline-block;
+}
+
 div.chat-section > div.chat-messages > div.message-balloon.sent {
     background-color: #d5f9ba;
     align-self: flex-end;
@@ -218,6 +231,28 @@ div.chat-section > div.chat-messages > div.message-balloon.sent {
 
 div.chat-section > div.chat-messages > div.message-balloon.received {
     background-color: white;
+}
+
+div.chat-section > div.chat-messages > div.message-balloon > div.dropdown-menu {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+
+div.chat-section > div.chat-messages > div.message-balloon > div.dropdown-menu > ul {
+    list-style: none;
+}
+
+div.chat-section > div.chat-messages > div.message-balloon > div.dropdown-menu > ul > li {
+    padding: 1rem;
+    transition: all .5s;
+}
+
+div.chat-section > div.chat-messages > div.message-balloon > div.dropdown-menu > ul > li:hover {
+    background-color: #e9ebeb;
 }
 
 div.chat-section > div.message-input {

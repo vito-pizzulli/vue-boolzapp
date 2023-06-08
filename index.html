@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boolzapp</title>
+    <title>Boolzapp Web</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="style/style.css">
 
@@ -79,7 +79,14 @@
                 <div class="chat-messages">
                     <div class="message-balloon" v-for="message in contacts[activeUser].messages" :class="{ 'sent' : message.status === 'sent', 'received' : message.status === 'received' }">
                         <p>{{ message.message }}</p>
+                        <i @click="showDropdownMenu()" class="fa-solid fa-chevron-down"></i>
                         <span>12:00</span>
+                        <div class="dropdown-menu" v-if="dropDownHidden === false">
+                            <ul>
+                                <li>Info messaggio</li>
+                                <li>Cancella messaggio</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="message-input">
