@@ -245,6 +245,7 @@ div.chat-section > div.chat-messages > div.dropdown-menu-bg {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 div.chat-section > div.chat-messages > div.message-balloon > div.dropdown-menu {
