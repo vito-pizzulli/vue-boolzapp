@@ -285,6 +285,7 @@ createApp ({
                 this.newMessageSent = ''
                 newMessageReceived = setTimeout(() => this.newMessageReceived(), 1000);
                 this.userAnswering = this.activeUser;
+                this.scrollToBottom();
             }
         },
         newMessageReceived() {
@@ -293,6 +294,7 @@ createApp ({
             if (this.userAnswering === this.activeUser) {
                 this.messageReceivedAudio.play();
             }
+            this.scrollToBottom();
         },
         randomAnswer() {
             return this.answers[Math.floor(Math.random() * this.answers.length)];
@@ -363,6 +365,10 @@ createApp ({
                 dateOnly = 'oggi';
             }
             return dateOnly;
+        },
+        scrollToBottom() {
+            scrollToBottomElement = document.querySelector('div.scroll-to-bottom');
+            scrollToBottomElement.scrollIntoView({ behavior: 'smooth' });
         }
     }
 }) .mount('#app');
