@@ -78,11 +78,11 @@
                 </div>
                 <div class="chat-messages">
                     <div class="dropdown-menu-bg" v-if="dropDownHidden === false" @click="hideDropdownMenu()"></div>
-                    <div class="message-balloon" v-for="message in contacts[activeUser].messages" :class="{ 'sent' : message.status === 'sent', 'received' : message.status === 'received' }">
+                    <div class="message-balloon" v-for="(message, index) in contacts[activeUser].messages" :class="{ 'sent' : message.status === 'sent', 'received' : message.status === 'received' }">
                         <p>{{ message.message }}</p>
-                        <i @click="showDropdownMenu()" class="fa-solid fa-chevron-down"></i>
+                        <i @click="showDropdownMenu(index)" class="fa-solid fa-chevron-down"></i>
                         <span>12:00</span>
-                        <div class="dropdown-menu" v-if="dropDownHidden === false">
+                        <div class="dropdown-menu" v-if="dropDownHidden === false && clickedMessage === index">
                             <ul>
                                 <li>Info messaggio</li>
                                 <li>Cancella messaggio</li>

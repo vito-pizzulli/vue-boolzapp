@@ -254,6 +254,7 @@ div.chat-section > div.chat-messages > div.message-balloon > div.dropdown-menu {
     position: absolute;
     top: 50%;
     left: 30%;
+    z-index: 1;
 }
 
 div.chat-section > div.chat-messages > div.message-balloon > div.dropdown-menu > ul {

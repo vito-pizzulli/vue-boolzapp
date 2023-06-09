@@ -179,7 +179,8 @@ createApp ({
             newMessageSent: '',
             messageSentAudio: new Audio('audio/messageSent.mp3'),
             messageReceivedAudio: new Audio('audio/messageReceived.mp3'),
-            dropDownHidden: true
+            dropDownHidden: true,
+            clickedMessageIndex: ''
         }
     },
     methods: {
@@ -216,7 +217,8 @@ createApp ({
             this.contacts[this.activeUser].messages.push(newMessageReceivedAdd);
             this.messageReceivedAudio.play();
         },
-        showDropdownMenu() {
+        showDropdownMenu(index) {
+            this.clickedMessage = index;
             this.dropDownHidden = false;
         },
         hideDropdownMenu() {
