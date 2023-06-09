@@ -222,12 +222,12 @@ createApp ({
                             status: 'received'
                         },
                         {
-                            date: '19/05/2020 16:12:00',
+                            date: '19/05/2023 16:42:00',
                             message: 'Si dovrei esserci, ti faccio sapere comunque 😁',
                             status: 'sent'
                         },
                         {
-                            date: '19/05/2020 16:25:47',
+                            date: '19/05/2023 16:58:47',
                             message: 'Va bene 😁',
                             status: 'received'
                         }
