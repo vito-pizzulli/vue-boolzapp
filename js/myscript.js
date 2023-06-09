@@ -273,7 +273,20 @@ createApp ({
             return hourAndMinutes;
         },
         getDateOnlyFromDate(date) {
+            currentDate = new Date();
+            currentDay = currentDate.getDate();
+            if (currentDay < 10) {
+                currentDay = '0' + currentDay;
+            }
+            currentMonth = currentDate.getMonth() + 1;
+            if (currentMonth < 10) {
+                currentMonth = '0' + currentMonth;
+            }
+            currentYear = currentDate.getFullYear();
             dateOnly = date.split(" ")[0];
+            if (`${currentDay}/${currentMonth}/${currentYear}` == dateOnly) {
+                dateOnly = 'oggi';
+            }
             return dateOnly;
         }
     }
