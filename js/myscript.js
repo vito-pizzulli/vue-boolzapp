@@ -280,6 +280,7 @@ createApp ({
         sendNewMessage() {
             if ((this.newMessageSent !== '') && (this.newMessageSent.trim().length !== 0)) {
                 newMessageAdd = { date: this.currentDateWithFormat(), message: this.newMessageSent, status: 'sent' };
+                this.messageSentAudio.currentTime = 0;
                 this.messageSentAudio.play();
                 this.contacts[this.activeUser].messages.push(newMessageAdd);
                 this.newMessageSent = ''
@@ -292,6 +293,7 @@ createApp ({
             newMessageReceivedAdd = { date: this.currentDateWithFormat(), message: this.randomAnswer(), status: 'received' };
             this.contacts[this.userAnswering].messages.push(newMessageReceivedAdd);
             if (this.userAnswering === this.activeUser) {
+                this.messageReceivedAudio.currentTime = 0;
                 this.messageReceivedAudio.play();
             }
             this.scrollToBottom();
@@ -314,6 +316,7 @@ createApp ({
             this.deleteConfirmHidden = true;
         },
         deleteMessage() {
+            this.messageSentAudio.currentTime = 0;
             this.messageSentAudio.play();
             this.contacts[this.activeUser].messages.splice(this.clickedMessage, 1);
             this.dropdownHidden = true;
