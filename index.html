@@ -55,7 +55,7 @@
                             <div>
                                 <span>{{ contact.name }}</span><br>
                                 <span class="text-gray">{{ contacts[index].messages[contacts[index].messages.length - 1].message }}</span>
-                                <span>12:00</span>
+                                <span>{{ getTimeFromDate(contacts[index].messages[contacts[index].messages.length - 1].date) }}</span>
                             </div>
                         </div>
                     </div>

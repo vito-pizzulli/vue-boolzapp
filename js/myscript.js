@@ -262,6 +262,11 @@ createApp ({
                 seconds = '0' + seconds;
             }
             return `${day}/${month}/${year} ${hour}:${minutes}:${seconds}`;
+        },
+        getTimeFromDate(date) {
+            time = date.split(" ")[1];
+            hourAndMinutes = time.split(":").slice(0,2).join(":");
+            return hourAndMinutes;
         }
     }
 }) .mount('#app');
