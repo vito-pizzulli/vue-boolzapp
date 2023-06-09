@@ -234,6 +234,18 @@ createApp ({
                     ],
                 }
             ],
+            answers: [
+                "Non ne ho la più pallida idea.",
+                "Dipende dai punti di vista.",
+                "Sono d'accordo!",
+                "Va bene!",
+                "Assolutamente sì!",
+                "No, non penso proprio.",
+                "Ok!",
+                "Sì, ma dipende da come la si guarda.",
+                "No, non è così semplice come sembra.",
+                "Sì, ma ci sono molti fattori da considerare."
+            ],
             activeUser: 0,
             userToSearch: '',
             newMessageSent: '',
@@ -276,11 +288,14 @@ createApp ({
             }
         },
         newMessageReceived() {
-            newMessageReceivedAdd = { date: this.currentDateWithFormat(), message: 'Ok!', status: 'received' };
+            newMessageReceivedAdd = { date: this.currentDateWithFormat(), message: this.randomAnswer(), status: 'received' };
             this.contacts[this.userAnswering].messages.push(newMessageReceivedAdd);
             if (this.userAnswering === this.activeUser) {
                 this.messageReceivedAudio.play();
             }
+        },
+        randomAnswer() {
+            return this.answers[Math.floor(Math.random() * this.answers.length)];
         },
         showDropdownMenu(index) {
             this.clickedMessage = index;
