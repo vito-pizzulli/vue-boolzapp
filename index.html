@@ -67,7 +67,7 @@
                         <img :src="contacts[activeUser].avatar" alt="Avatar Image" class="avatar-pic">
                         <div>
                             <span>{{ contacts[activeUser].name }}</span><br>
-                            <span class="text-gray ">Ultimo accesso oggi alle 12:00</span>
+                            <span class="text-gray">Ultimo accesso oggi alle 12:00</span>
                         </div>
                     </div>
                     <div class="chatting-user-icons">
@@ -81,7 +81,7 @@
                     <div class="message-balloon" v-for="(message, index) in contacts[activeUser].messages" :class="{ 'sent' : message.status === 'sent', 'received' : message.status === 'received' }">
                         <p>{{ message.message }}</p>
                         <i @click="showDropdownMenu(index)" class="fa-solid fa-chevron-down"></i>
-                        <span>12:00</span>
+                        <span>{{ getTimeFromDate(message.date) }}</span>
                         <div class="dropdown-menu" v-if="dropdownHidden === false && clickedMessage === index">
                             <ul>
                                 <li>Info messaggio</li>
