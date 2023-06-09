@@ -67,7 +67,7 @@
                         <img :src="contacts[activeUser].avatar" alt="Avatar Image" class="avatar-pic">
                         <div>
                             <span>{{ contacts[activeUser].name }}</span><br>
-                            <span class="text-gray">Ultimo accesso oggi alle 12:00</span>
+                            <span class="text-gray">Ultimo accesso: {{ getDateOnlyFromDate(contacts[activeUser].messages[contacts[activeUser].messages.length - 1].date)}} alle {{ getTimeFromDate(contacts[activeUser].messages[contacts[activeUser].messages.length - 1].date)}}</span>
                         </div>
                     </div>
                     <div class="chatting-user-icons">

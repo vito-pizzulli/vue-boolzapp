@@ -271,6 +271,10 @@ createApp ({
             time = date.split(" ")[1];
             hourAndMinutes = time.split(":").slice(0,2).join(":");
             return hourAndMinutes;
+        },
+        getDateOnlyFromDate(date) {
+            dateOnly = date.split(" ")[0];
+            return dateOnly;
         }
     }
 }) .mount('#app');
