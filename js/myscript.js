@@ -5,170 +5,230 @@ createApp ({
         return {
             contacts: [
                 {
-                    name: 'Michele',
+                    name: 'Francesco',
                     avatar: './img/avatar_1.jpg',
                     visible: true,
                     id: 1,
                     messages: [
                         {
-                            date: '10/01/2020 15:30:55',
-                            message: 'Hai portato a spasso il cane?',
+                            date: '03/06/2023 15:30:20',
+                            message: 'Stasera che facciamo?',
                             status: 'sent'
                         },
                         {
-                            date: '10/01/2020 15:50:00',
-                            message: 'Ricordati di stendere i panni',
+                            date: '03/06/2023 15:35:50',
+                            message: 'Andiamo a mangiare una pizza?',
+                            status: 'received'
+                        },
+                        {
+                            date: '03/06/2023 15:37:10',
+                            message: 'Si ci sta, sperando che non piova 😅',
                             status: 'sent'
                         },
                         {
-                            date: '10/01/2020 16:15:22',
-                            message: 'Tutto fatto!',
+                            date: '03/06/2023 15:42:07',
+                            message: 'Se piove dopo mangiato torniamo a casa e giochiamo alla Playstation! 😎',
+                            status: 'received'
+                        },
+                        {
+                            date: '03/06/2023 15:46:46',
+                            message: 'Va benissimo 😎',
+                            status: 'sent'
+                        },
+                        {
+                            date: '03/06/2023 15:48:00',
+                            message: 'Perfetto 👍',
                             status: 'received'
                         }
                     ],
                 },
                 {
-                    name: 'Fabio',
+                    name: 'Augusto',
                     avatar: './img/avatar_2.jpg',
                     visible: true,
                     id: 2,
                     messages: [
                         {
-                            date: '20/03/2020 16:30:00',
-                            message: 'Ciao come stai?',
-                            status: 'sent'
-                        },
-                        {
-                            date: '20/03/2020 16:30:55',
-                            message: 'Bene grazie! Stasera ci vediamo?',
+                            date: '02/06/2023 14:02:15',
+                            message: 'Stasera vuoi venire a ballare?',
                             status: 'received'
                         },
                         {
-                            date: '20/03/2020 16:35:00',
-                            message: 'Mi piacerebbe ma devo andare a fare la spesa.',
+                            date: '02/06/2023 14:15:34',
+                            message: 'Dove?',
                             status: 'sent'
-                        }
+                        },
+                        {
+                            date: '02/06/2023 14:19:25',
+                            message: 'In un bel locale a Matera 👍',
+                            status: 'received'
+                        },
+                        {
+                            date: '02/06/2023 14:23:54',
+                            message: 'Si dai, si può fare 👍',
+                            status: 'sent'
+                        },
+                        {
+                            date: '02/06/2023 14:30:10',
+                            message: 'Va bene, ci vediamo dopo',
+                            status: 'received'
+                        },
                     ],
                 },
                 {
-                    name: 'Samuele',
+                    name: 'Fabio',
                     avatar: './img/avatar_3.jpg',
                     visible: true,
                     id: 3,
                     messages: [
                         {
-                            date: '28/03/2020 10:10:40',
-                            message: 'La Marianna va in campagna',
+                            date: '08/06/2023 18:10:40',
+                            message: "Ciao Vito, stasera c'è il Summer Game Fest, ti va di vederlo insieme?",
                             status: 'received'
                         },
                         {
-                            date: '28/03/2020 10:20:10',
-                            message: 'Sicuro di non aver sbagliato chat?',
+                            date: '08/06/2023 18:11:12',
+                            message: "Potrebbero far vedere qualcosa di Final Fantasy 7 Rebirth",
+                            status: 'received'
+                        },
+                        {
+                            date: '08/06/2023 18:13:43',
+                            message: 'Ciao Fabio, si va benissimo',
                             status: 'sent'
                         },
                         {
-                            date: '28/03/2020 16:15:22',
-                            message: 'Ah scusa!',
+                            date: '08/06/2023 18:14:03',
+                            message: 'A che ora inizia?',
+                            status: 'sent'
+                        },
+                        {
+                            date: '08/06/2023 18:15:15',
+                            message: 'Alle 21:00',
+                            status: 'received'
+                        },
+                        {
+                            date: '08/06/2023 18:15:57',
+                            message: 'A dopo allora!',
                             status: 'received'
                         }
                     ],
                 },
                 {
-                    name: 'Alessandro B.',
+                    name: 'Alberto',
                     avatar: './img/avatar_4.jpg',
                     visible: true,
                     id: 4,
                     messages: [
                         {
-                            date: '10/01/2020 15:30:55',
-                            message: 'Lo sai che ha aperto una nuova pizzeria?',
+                            date: '31/04/2023 23:35:48',
+                            message: 'Cuggi come va? Come stai?',
                             status: 'sent'
                         },
                         {
-                            date: '10/01/2020 15:50:00',
-                            message: 'Si, ma preferirei andare al cinema',
+                            date: '01/05/2023 08:10:20',
+                            message: 'Cuggi tutto bene, a te? Quando vieni di nuovo a Roma? 😂',
+                            status: 'received'
+                        },
+                        {
+                            date: '01/05/2023 11:32:51',
+                            message: 'Tutto bene, comunque torno presto! 😎',
+                            status: 'sent'
+                        },
+                        {
+                            date: '01/05/2023 13:02:15',
+                            message: 'Ti aspetto presto allora!',
                             status: 'received'
                         }
                     ],
                 },
                 {
-                    name: 'Alessandro L.',
+                    name: 'Anto',
                     avatar: './img/avatar_5.jpg',
                     visible: true,
                     id: 5,
                     messages: [
                         {
-                            date: '10/01/2020 15:30:55',
-                            message: 'Ricordati di chiamare la nonna',
+                            date: '05/06/2023 19:02:55',
+                            message: 'Dove sei?',
                             status: 'sent'
                         },
                         {
-                            date: '10/01/2020 15:50:00',
-                            message: 'Va bene, stasera la sento',
+                            date: '05/06/2023 19:28:03',
+                            message: 'A Taranto',
+                            status: 'received'
+                        },
+                        {
+                            date: '05/06/2023 19:36:14',
+                            message: 'Fai attenzione',
+                            status: 'sent'
+                        },
+                        {
+                            date: '05/06/2023 20:02:58',
+                            message: 'Si tranquillo',
                             status: 'received'
                         }
                     ],
                 },
                 {
-                    name: 'Claudia',
+                    name: 'Mamma',
                     avatar: './img/avatar_6.jpg',
                     visible: true,
                     id: 6,
                     messages: [
                         {
-                            date: '10/01/2020 15:30:55',
-                            message: 'Ciao Claudia, hai novità?',
-                            status: 'sent'
-                        },
-                        {
-                            date: '10/01/2020 15:50:00',
-                            message: 'Non ancora',
+                            date: '09/06/2023 12:00:51',
+                            message: 'A che punto sei? 😘',
                             status: 'received'
                         },
                         {
-                            date: '10/01/2020 15:51:00',
-                            message: 'Nessuna nuova, buona nuova',
+                            date: '09/06/2023 12:10:24',
+                            message: 'Sto tornando',
                             status: 'sent'
+                        },
+                        {
+                            date: '09/06/2023 12:12:10',
+                            message: 'Ok 😘',
+                            status: 'received'
                         }
                     ],
                 },
                 {
-                    name: 'Federico',
+                    name: 'Papà',
                     avatar: './img/avatar_7.jpg',
                     visible: true,
                     id: 7,
                     messages: [
                         {
-                            date: '10/01/2020 15:30:55',
-                            message: 'Fai gli auguri a Martina che è il suo compleanno!',
+                            date: '25/05/2023 18:57:21',
+                            message: 'Siete arrivati?',
                             status: 'sent'
                         },
                         {
-                            date: '10/01/2020 15:50:00',
-                            message: 'Grazie per avermelo ricordato, le scrivo subito!',
+                            date: '25/05/2023 18:59:38',
+                            message: 'Si proprio adesso',
                             status: 'received'
                         }
                     ],
                 },
                 {
-                    name: 'Davide',
+                    name: 'Rossana',
                     avatar: './img/avatar_8.jpg',
                     visible: true,
                     id: 8,
                     messages: [
                         {
-                            date: '10/01/2020 15:30:55',
-                            message: 'Ciao, andiamo a mangiare la pizza stasera?',
+                            date: '19/05/2023 16:30:16',
+                            message: 'Sei libero domenica? Ci riuniamo tutti in campagna',
                             status: 'received'
                         },
                         {
-                            date: '10/01/2020 15:50:00',
-                            message: 'No, l\'ho già mangiata ieri, ordiniamo sushi!',
+                            date: '19/05/2020 16:12:00',
+                            message: 'Si dovrei esserci, ti faccio sapere comunque 😁',
                             status: 'sent'
                         },
                         {
-                            date: '10/01/2020 15:51:00',
-                            message: 'OK!!',
+                            date: '19/05/2020 16:25:47',
+                            message: 'Va bene 😁',
                             status: 'received'
                         }
                     ],
