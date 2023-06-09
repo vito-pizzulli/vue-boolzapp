@@ -85,8 +85,16 @@
                         <div class="dropdown-menu" v-if="dropdownHidden === false && clickedMessage === index">
                             <ul>
                                 <li>Info messaggio</li>
-                                <li @click="deleteMessage()">Cancella messaggio</li>
+                                <li @click="showDeleteConfirm()">Cancella messaggio</li>
                             </ul>
+                            <div class="delete-confirm-bg" v-if="deleteConfirmHidden === false" @click="hideDeleteConfirm()"></div>
+                            <div class="delete-confirm" v-if="deleteConfirmHidden === false">
+                                <span>Vuoi eliminare il messaggio?</span>
+                                <div class="delete-buttons">
+                                    <button @click="deleteMessage()">Conferma</button>
+                                    <button @click="hideDropdownMenu()">Annulla</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

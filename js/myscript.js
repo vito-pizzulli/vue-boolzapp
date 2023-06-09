@@ -180,7 +180,8 @@ createApp ({
             messageSentAudio: new Audio('audio/messageSent.mp3'),
             messageReceivedAudio: new Audio('audio/messageReceived.mp3'),
             dropdownHidden: true,
-            clickedMessageIndex: ''
+            clickedMessageIndex: '',
+            deleteConfirmHidden: true
         }
     },
     methods: {
@@ -223,10 +224,19 @@ createApp ({
         },
         hideDropdownMenu() {
             this.dropdownHidden = true;
+            this.deleteConfirmHidden = true;
+        },
+        showDeleteConfirm() {
+            this.deleteConfirmHidden = false;
+        },
+        hideDeleteConfirm() {
+            this.deleteConfirmHidden = true;
         },
         deleteMessage() {
+            this.messageSentAudio.play();
             this.contacts[this.activeUser].messages.splice(this.clickedMessage, 1);
             this.dropdownHidden = true;
+            this.deleteConfirmHidden = true;
         },
         currentDateWithFormat() {
             date = new Date();

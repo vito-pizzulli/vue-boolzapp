@@ -242,7 +242,7 @@ div.chat-section > div.chat-messages > div.message-balloon.received {
 div.chat-section > div.chat-messages > div.dropdown-menu-bg {
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
@@ -270,6 +270,55 @@ div.chat-section > div.chat-messages > div.message-balloon > div.dropdown-menu >
 
 div.chat-section > div.chat-messages > div.message-balloon > div.dropdown-menu > ul > li:hover {
     background-color: #e9ebeb;
+}
+
+div.chat-section > div.chat-messages > div.message-balloon > div.dropdown-menu > div.delete-confirm-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+} 
+
+div.chat-section > div.chat-messages > div.message-balloon > div.dropdown-menu > div.delete-confirm {
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    border-radius: 20px;
+    font-size: 1.2rem;
+}
+
+div.chat-section > div.chat-messages > div.message-balloon > div.dropdown-menu > div.delete-confirm > span {
+    padding: 1.5rem;
+}
+
+div.chat-section > div.chat-messages > div.message-balloon > div.dropdown-menu > div.delete-buttons {
+    display: flex;
+    align-items: center;
+}
+
+div.chat-section > div.chat-messages > div.message-balloon > div.dropdown-menu > div.delete-confirm > div.delete-buttons > button {
+    margin: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    transition: all .5s;
+}
+
+div.chat-section > div.chat-messages > div.message-balloon > div.dropdown-menu > div.delete-confirm > div.delete-buttons > button:first-of-type {
+    background-color: #198564;
+    color: white;
+}
+
+div.chat-section > div.chat-messages > div.message-balloon > div.dropdown-menu > div.delete-confirm > div.delete-buttons > button:first-of-type:hover {
+    background-color: #21ad83;
 }
 
 div.chat-section > div.message-input {
