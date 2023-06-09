@@ -177,6 +177,7 @@ createApp ({
             activeUser: 0,
             userToSearch: '',
             newMessageSent: '',
+            userAnswering: '',
             messageSentAudio: new Audio('audio/messageSent.mp3'),
             messageReceivedAudio: new Audio('audio/messageReceived.mp3'),
             dropdownHidden: true,
@@ -211,12 +212,15 @@ createApp ({
                 this.contacts[this.activeUser].messages.push(newMessageAdd);
                 this.newMessageSent = ''
                 newMessageReceived = setTimeout(() => this.newMessageReceived(), 1000);
+                this.userAnswering = this.activeUser;
             }
         },
         newMessageReceived() {
             newMessageReceivedAdd = { date: this.currentDateWithFormat(), message: 'Ok!', status: 'received' };
-            this.contacts[this.activeUser].messages.push(newMessageReceivedAdd);
-            this.messageReceivedAudio.play();
+            this.contacts[this.userAnswering].messages.push(newMessageReceivedAdd);
+            if (this.userAnswering === this.activeUser) {
+                this.messageReceivedAudio.play();
+            }
         },
         showDropdownMenu(index) {
             this.clickedMessage = index;
