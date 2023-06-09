@@ -260,11 +260,12 @@ div.chat-section > div.chat-messages > div.message-balloon > div.dropdown-menu {
 
 div.chat-section > div.chat-messages > div.message-balloon > div.dropdown-menu > ul {
     list-style: none;
+    white-space: nowrap;
 }
 
 div.chat-section > div.chat-messages > div.message-balloon > div.dropdown-menu > ul > li {
-    padding: 1rem;
     transition: all .5s;
+    padding: 1.5rem 2rem;
 }
 
 div.chat-section > div.chat-messages > div.message-balloon > div.dropdown-menu > ul > li:hover {

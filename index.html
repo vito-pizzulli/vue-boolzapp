@@ -77,15 +77,15 @@
                     </div>
                 </div>
                 <div class="chat-messages">
-                    <div class="dropdown-menu-bg" v-if="dropDownHidden === false" @click="hideDropdownMenu()"></div>
+                    <div class="dropdown-menu-bg" v-if="dropdownHidden === false" @click="hideDropdownMenu()"></div>
                     <div class="message-balloon" v-for="(message, index) in contacts[activeUser].messages" :class="{ 'sent' : message.status === 'sent', 'received' : message.status === 'received' }">
                         <p>{{ message.message }}</p>
                         <i @click="showDropdownMenu(index)" class="fa-solid fa-chevron-down"></i>
                         <span>12:00</span>
-                        <div class="dropdown-menu" v-if="dropDownHidden === false && clickedMessage === index">
+                        <div class="dropdown-menu" v-if="dropdownHidden === false && clickedMessage === index">
                             <ul>
                                 <li>Info messaggio</li>
-                                <li>Cancella messaggio</li>
+                                <li @click="deleteMessage()">Cancella messaggio</li>
                             </ul>
                         </div>
                     </div>
