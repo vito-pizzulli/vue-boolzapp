@@ -187,7 +187,7 @@ createApp ({
                         },
                         {
                             date: '09/06/2023 12:12:10',
-                            message: 'Ok 😘',
+                            message: 'Ok',
                             status: 'received'
                         }
                     ],
