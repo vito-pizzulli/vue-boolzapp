@@ -87,6 +87,7 @@ div.users-section > div.desktop-notifications {
     display: flex;
     align-items: center;
     padding: 1rem;
+    overflow: hidden;
 }
 
 .fa-bell-slash {
@@ -160,26 +161,28 @@ div.users-section > div.users-list > div.user > .user-informations {
     height: 100%;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 div.users-section > div.users-list > div.user > .user-informations > div {
     margin-left: 1rem;
 }
 
-div.users-section > div.users-list > div.user > .user-informations > div > span:first-of-type {
+div.users-section > div.users-list > div.user > .user-informations > div > span.user-name {
     font-size: 1.3rem;
 }
 
-div.users-section > div.users-list > div.user > .user-informations > div > span:last-of-type {
+div.users-section > div.users-list > div.user > .user-informations > div > span.user-last-msg-time {
     font-size: .9rem;
-    color: gray;
     position: absolute;
     top: 5%;
     right: 5%;
+    color: gray;
 }
 
 div.chat-section > div.chatting-user > div.chatting-user-informations > div {
     margin-left: 1rem;
+    overflow: hidden;
 }
 
 div.chat-section > div.chatting-user > div.chatting-user-informations > div > span:first-of-type {

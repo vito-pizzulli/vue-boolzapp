@@ -53,9 +53,10 @@
                         <div class="user-informations">
                             <img :src="contact.avatar" alt="Avatar Image" class="avatar-pic">
                             <div>
-                                <span>{{ contact.name }}</span><br>
-                                <span class="text-gray">{{ contacts[index].messages[contacts[index].messages.length - 1].message }}</span>
-                                <span>{{ getTimeFromDate(contacts[index].messages[contacts[index].messages.length - 1].date) }}</span>
+                                <span class="user-name">{{ contact.name }}</span><br>
+                                <span class="text-gray" v-if="contacts[index].messages.length !== 0">{{ contacts[index].messages[contacts[index].messages.length - 1].message }}</span>
+                                <span class="text-gray" v-if="contacts[index].messages.length === 0">Nessun messaggio presente.</span>
+                                <span class="user-last-msg-time" v-if="contacts[index].messages.length !== 0">{{ getTimeFromDate(contacts[index].messages[contacts[index].messages.length - 1].date) }}</span>
                             </div>
                         </div>
                     </div>
@@ -67,7 +68,8 @@
                         <img :src="contacts[activeUser].avatar" alt="Avatar Image" class="avatar-pic">
                         <div>
                             <span>{{ contacts[activeUser].name }}</span><br>
-                            <span class="text-gray">Ultimo accesso: {{ getDateOnlyFromDate(contacts[activeUser].messages[contacts[activeUser].messages.length - 1].date)}} alle {{ getTimeFromDate(contacts[activeUser].messages[contacts[activeUser].messages.length - 1].date)}}</span>
+                            <span class="text-gray" v-if="contacts[activeUser].messages.length !== 0">Ultimo accesso: {{ getDateOnlyFromDate(contacts[activeUser].messages[contacts[activeUser].messages.length - 1].date)}} alle {{ getTimeFromDate(contacts[activeUser].messages[contacts[activeUser].messages.length - 1].date)}}</span>
+                            <span class="text-gray" v-if="contacts[activeUser].messages.length === 0">Ultimo accesso dell'utente nascosto se non sono presenti messaggi.</span>
                         </div>
                     </div>
                     <div class="chatting-user-icons">
