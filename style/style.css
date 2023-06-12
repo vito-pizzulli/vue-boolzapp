@@ -388,6 +388,10 @@ div.chat-section > div.message-input > input {
         width: 100%;
         margin-bottom: 3rem;
     }
+
+    div.users-section > div.users-list > div.user {
+        padding: .2rem;
+    }
     
     div.chat-section {
         width: 100%;
@@ -395,6 +399,10 @@ div.chat-section > div.message-input > input {
 
     div.chat-section > div.chat-messages {
         padding: 1rem;
+    }
+    
+    div.chat-section > div.chatting-user {
+        padding: .1rem;
     }
 }
 
@@ -419,6 +427,10 @@ div.chat-section > div.message-input > input {
     div.users-section > div.my-user > div.my-user-icons,
     div.chat-section > div.chatting-user > div.chatting-user-icons {
         display: none;
+    }
+
+    div.users-section > div.users-list > div.user {
+        padding: .5rem;
     }
 }
 
