@@ -364,3 +364,54 @@ div.chat-section > div.message-input > input {
 .text-gray {
     color: gray;
 }
+
+
+
+/* Responsive Layouts */
+
+/* XS Layout (from 0px to 576px */
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 1rem;
+    }
+
+    div.container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    div.users-section {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    
+    div.chat-section {
+        width: 100%;
+    }
+
+    div.chat-section > div.chat-messages {
+        padding: 1rem;
+    }
+}
+
+/* 2K Layout (from 2560px to 3840px */
+@media screen and (min-width: 2560px) {
+    html {
+        font-size: 20px;
+    }
+
+    .fa-bell-slash {
+        width: 80px;
+    }
+}
+
+/* 4K Layout (from 3840px to higher resolutions */
+@media screen and (min-width: 3840px) {
+    html {
+        font-size: 30px;
+    }
+
+    .fa-bell-slash {
+        width: 125px;
+    }
+}
